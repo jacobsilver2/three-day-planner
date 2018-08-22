@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { Header } from './Components/Header';
-import { Textbox } from './Components/Textbox';
-import { DisplayToday, DisplayTomorrow, DisplayDayAfterTomorrow } from './Components/Display';
-import './App.css';
+import  Header  from './Components/Header';
+import Textbox from './Components/Textbox';
+import DisplayToday from './components/DisplayToday';
+import DisplayTomorrow from './components/DisplayTomorrow';
+import DisplayDayAfterTomorrow from './components/DisplayDayAfterTomorrow';
+// import './App.css';
+import 'hack';
 
 class App extends Component {
   state = { 
