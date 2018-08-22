@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import  Header  from './Components/Header';
-import Textbox from './Components/Textbox';
+import Textbox from './components/Textbox';
+import Header from './components/header';
 import DisplayToday from './components/DisplayToday';
 import DisplayTomorrow from './components/DisplayTomorrow';
 import DisplayDayAfterTomorrow from './components/DisplayDayAfterTomorrow';
 // import './App.css';
 import 'hack';
+import SimpleStorage from 'react-simple-storage';
 
 class App extends Component {
   state = { 
@@ -71,7 +72,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header name={this.state.username} />
+      <SimpleStorage parent={this} />
+        <Header name={this.state.username}/>
         <Textbox updateEntry={this.updateEntry} />
         <hr />
         <div className="grid">
